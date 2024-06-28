@@ -16,6 +16,11 @@ $(document).ready(function() {
 const box = document.querySelector(".box")
 
 
+box.addEventListener("onclick",()=>{
+    console.log("mouse overing");
+    document.querySelector("#audio").play()
+})
+
 box.addEventListener("mouseover",()=>{
     console.log("mouse overing");
     document.querySelector("#audio").play()
